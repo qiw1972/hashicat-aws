@@ -1,7 +1,6 @@
 #!/bin/bash
 # Script to deploy a very simple web application.
 # The web app has a customizable image and some text.
-#Welcome to ${PREFIX}'s app. Replace this text with your own.
 
 <html>
   <head><title>Meow!</title></head>
