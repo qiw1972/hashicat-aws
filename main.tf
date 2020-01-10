@@ -113,8 +113,6 @@ resource aws_instance "hashicat" {
   vpc_security_group_ids      = [aws_security_group.hashicat.id]
 
   tags = {
-    Name = "${var.Billable}-hashicat-instance"
-    Name = "${var.Department}-hashicat-instance"
     Name = "${var.prefix}-hashicat-instance"
   }
 }
