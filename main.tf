@@ -114,6 +114,8 @@ resource aws_instance "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+    Billable = "True"
+    Department = "DevOps"
   }
 }
 
@@ -180,8 +182,6 @@ resource tls_private_key "hashicat" {
 
 locals {
   private_key_filename = "${var.prefix}-ssh-key.pem"
-  private_key_filename = "${var.Department}-ssh-key.pem"
-  private_key_filename = "${var.Billable}-ssh-key.pem"
 }
 
 resource aws_key_pair "hashicat" {
